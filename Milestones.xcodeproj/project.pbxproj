@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AE9198FB2022C33100642B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9198FA2022C33100642B29 /* AppDelegate.swift */; };
-		AE9198FD2022C33100642B29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9198FC2022C33100642B29 /* ViewController.swift */; };
 		AE9199002022C33100642B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9198FE2022C33100642B29 /* Main.storyboard */; };
 		AE9199022022C33100642B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9199012022C33100642B29 /* Assets.xcassets */; };
 		AE9199052022C33100642B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9199032022C33100642B29 /* LaunchScreen.storyboard */; };
 		AE9199102022C33100642B29 /* MilestonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91990F2022C33100642B29 /* MilestonesTests.swift */; };
 		AE91991B2022C33100642B29 /* MilestonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91991A2022C33100642B29 /* MilestonesUITests.swift */; };
+		AE9FC8912022CB5D008BA99B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9FC8902022CB5D008BA99B /* LoginViewController.swift */; };
+		AEBAF348202AC9680032D7AC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF347202AC9680032D7AC /* UIColor.swift */; };
+		AEBAF34A202BF6080032D7AC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF349202BF6080032D7AC /* Keys.swift */; };
+		AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */; };
+		C52230A7DF738D073AA4EDA8 /* Pods_Milestones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D7E9DD549029D2614FF6FA /* Pods_Milestones.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05508104462B3D992CA39B07 /* Pods-Milestones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milestones.release.xcconfig"; path = "Pods/Target Support Files/Pods-Milestones/Pods-Milestones.release.xcconfig"; sourceTree = "<group>"; };
+		3CACEB562ACD55484FC311E8 /* Pods-Milestones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milestones.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Milestones/Pods-Milestones.debug.xcconfig"; sourceTree = "<group>"; };
+		49D7E9DD549029D2614FF6FA /* Pods_Milestones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Milestones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9198F72022C33100642B29 /* Milestones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9198FA2022C33100642B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE9198FC2022C33100642B29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE9198FF2022C33100642B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE9199012022C33100642B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE9199042022C33100642B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		AE9199162022C33100642B29 /* MilestonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilestonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE91991A2022C33100642B29 /* MilestonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesUITests.swift; sourceTree = "<group>"; };
 		AE91991C2022C33100642B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9FC8902022CB5D008BA99B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AEBAF347202AC9680032D7AC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AEBAF349202BF6080032D7AC /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52230A7DF738D073AA4EDA8 /* Pods_Milestones.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3360F71ADF6F518FC034E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D7E9DD549029D2614FF6FA /* Pods_Milestones.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ED3A3DDD5C4D52D0116FB98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CACEB562ACD55484FC311E8 /* Pods-Milestones.debug.xcconfig */,
+				05508104462B3D992CA39B07 /* Pods-Milestones.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE9198EE2022C33100642B29 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				AE91990E2022C33100642B29 /* MilestonesTests */,
 				AE9199192022C33100642B29 /* MilestonesUITests */,
 				AE9198F82022C33100642B29 /* Products */,
+				9ED3A3DDD5C4D52D0116FB98 /* Pods */,
+				4C3360F71ADF6F518FC034E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +128,14 @@
 			isa = PBXGroup;
 			children = (
 				AE9198FA2022C33100642B29 /* AppDelegate.swift */,
-				AE9198FC2022C33100642B29 /* ViewController.swift */,
+				AE9FC8902022CB5D008BA99B /* LoginViewController.swift */,
 				AE9198FE2022C33100642B29 /* Main.storyboard */,
 				AE9199012022C33100642B29 /* Assets.xcassets */,
 				AE9199032022C33100642B29 /* LaunchScreen.storyboard */,
 				AE9199062022C33100642B29 /* Info.plist */,
+				AEBAF347202AC9680032D7AC /* UIColor.swift */,
+				AEBAF349202BF6080032D7AC /* Keys.swift */,
+				AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */,
 			);
 			path = Milestones;
 			sourceTree = "<group>";
@@ -132,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE91991F2022C33100642B29 /* Build configuration list for PBXNativeTarget "Milestones" */;
 			buildPhases = (
+				D820ECE8F4BE88810DB9C3AE /* [CP] Check Pods Manifest.lock */,
 				AE9198F32022C33100642B29 /* Sources */,
 				AE9198F42022C33100642B29 /* Frameworks */,
 				AE9198F52022C33100642B29 /* Resources */,
+				91BE957B5D478F24F2FB4ACD /* [CP] Embed Pods Frameworks */,
+				2725D7A866D64E5777E743A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +290,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2725D7A866D64E5777E743A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Milestones/Pods-Milestones-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91BE957B5D478F24F2FB4ACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Milestones/Pods-Milestones-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SKClient/SKClient.framework",
+				"${BUILT_PRODUCTS_DIR}/SKCore/SKCore.framework",
+				"${BUILT_PRODUCTS_DIR}/SKRTMAPI/SKRTMAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/SKServer/SKServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SKWebAPI/SKWebAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/SlackKit/SlackKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKRTMAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKWebAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Milestones/Pods-Milestones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D820ECE8F4BE88810DB9C3AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Milestones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE9198F32022C33100642B29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9198FD2022C33100642B29 /* ViewController.swift in Sources */,
+				AE9FC8912022CB5D008BA99B /* LoginViewController.swift in Sources */,
+				AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */,
+				AEBAF34A202BF6080032D7AC /* Keys.swift in Sources */,
+				AEBAF348202AC9680032D7AC /* UIColor.swift in Sources */,
 				AE9198FB2022C33100642B29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +531,7 @@
 		};
 		AE9199202022C33100642B29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CACEB562ACD55484FC311E8 /* Pods-Milestones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,13 +540,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.heathermason.Milestones;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AE9199212022C33100642B29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05508104462B3D992CA39B07 /* Pods-Milestones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,7 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.heathermason.Milestones;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
