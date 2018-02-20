@@ -73,13 +73,13 @@ private func matchRoute(path: String, route: String) -> Bool {
 
 extension String {
   func splitOnSlashes() -> [String] {
-    return self.characters.split(separator: "/").map { String($0) }
+    return self.split(separator: "/").map { String($0) } // if this breaks, add characters back to self.characters.split...
   }
 }
 
 extension String {
   func prefixUpToQuery() -> String {
-    let chars = self.characters
+    let chars = self // if this breaks add characters back to self.characters
     return chars.index(of: "?")
       .map { chars.prefix(upTo: $0) }
       .map(String.init) ?? self

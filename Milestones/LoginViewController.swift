@@ -58,7 +58,7 @@ class LoginViewController: UIViewController, WKUIDelegate {
         loginButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
-    func signIn() {
+    @objc func signIn() {
         view.addSubview(webView)
     }
 }

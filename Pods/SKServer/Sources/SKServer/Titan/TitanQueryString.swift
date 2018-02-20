@@ -19,7 +19,7 @@ import class Foundation.NSString
 
 public extension RequestType {
   public var queryPairs: [(key: String, value: String)] {
-    let chars = self.path.characters
+    let chars = self.path // if this breaks, add .characters back to the end of this line
     guard let indexOfQuery = chars.index(of: "?") else {
       return []
     }

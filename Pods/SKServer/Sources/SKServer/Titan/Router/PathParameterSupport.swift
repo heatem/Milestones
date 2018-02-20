@@ -70,7 +70,7 @@ func extractParameters(from path: String, with template: String) -> [String] {
 
 extension String {
   var wildcards: Int {
-    return self.characters.reduce(0) { (count, char) in
+    return self.reduce(0) { (count, char) in // if this breaks, add characters back to self.characters.reduce(0)
       if char == "*" {
         return count + 1
       } else {
