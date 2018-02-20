@@ -32,6 +32,8 @@ class LoginViewController: UIViewController, WKUIDelegate {
         return webview
     }()
     
+    var code = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,5 +61,4 @@ class LoginViewController: UIViewController, WKUIDelegate {
     func signIn() {
         view.addSubview(webView)
     }
-
 }

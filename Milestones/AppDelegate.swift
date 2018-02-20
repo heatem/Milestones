@@ -46,16 +46,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         
+        // change this to get the code out
         print("url: \(url)")
 //        print("url host: \(url.host)")
         print("url path: \(url.path)")
         
-        let urlPath = url.path
-        if urlPath == "" {
+        let urlString = String(describing: url)
+        let start = urlString.index(urlString.startIndex, offsetBy: 45)
+        let end = urlString.index(urlString.endIndex, offsetBy: -7)
+        let range = start..<end
+        let code = urlString[range]
+
+        print(code)
+        let codeLength = code.count
+        if codeLength == 90 {
             self.window?.rootViewController = MilestonesViewController()
+        } else {
+            self.window?.rootViewController = LoginViewController()
         }
         self.window?.makeKeyAndVisible()
+//        let urlPath = url.path
+//        if urlPath == "" {
+//            self.window?.rootViewController = MilestonesViewController()
+//        }
+//        self.window?.makeKeyAndVisible()
+//
+//
+
         return true
+
     }
 
 }
