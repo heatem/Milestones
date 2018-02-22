@@ -46,32 +46,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         
-        // change this to get the code out
-        print("url: \(url)")
-//        print("url host: \(url.host)")
-        print("url path: \(url.path)")
-        
         let urlString = String(describing: url)
         let start = urlString.index(urlString.startIndex, offsetBy: 45)
         let end = urlString.index(urlString.endIndex, offsetBy: -7)
         let range = start..<end
         let code = urlString[range]
-
-        print(code)
-        let codeLength = code.count
-        if codeLength == 90 {
-            self.window?.rootViewController = MilestonesViewController()
-        } else {
-            self.window?.rootViewController = LoginViewController()
+        
+        func getToken() {
+            let request = NSMutableURLRequest(url: NSURL(string: "https://slack.com/api/oauth.access?client_id=\(CLIENT_ID)&client_secret=\(CLIENT_SECRET)&code=\(code)")! as URL)
+            request.httpMethod = "GET"
+            request.setValue("application/json", forHTTPHeaderField: "Accept")
+            URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+                //                print(response)
+                guard let unwrappedData = data else { return }
+                do {
+                    if let rootObject = try JSONSerialization.jsonObject(with: unwrappedData, options: []) as? NSDictionary {
+                        DispatchQueue.main.async {
+                            usernameFromSlack = (rootObject["user"] as! NSDictionary)["name"]! as! String
+                            self.window?.rootViewController = MilestonesViewController()
+                            // print((rootObject["user"] as! NSDictionary)["name"]! as! String)
+                        }
+                    }
+                } catch {
+                    DispatchQueue.main.async {
+                        print(error)
+                        self.window?.rootViewController = LoginViewController()
+                    }
+                }
+            }).resume()
         }
-        self.window?.makeKeyAndVisible()
-//        let urlPath = url.path
-//        if urlPath == "" {
+
+//        let codeLength = code.count
+//        if codeLength == 90 {
 //            self.window?.rootViewController = MilestonesViewController()
+//        } else {
+//            self.window?.rootViewController = LoginViewController()
 //        }
-//        self.window?.makeKeyAndVisible()
-//
-//
+        getToken()
+        self.window?.makeKeyAndVisible()
 
         return true
 

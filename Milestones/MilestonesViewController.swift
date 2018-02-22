@@ -7,14 +7,29 @@
 //
 
 import UIKit
+import SlackKit
+
+var usernameFromSlack = "usernameFromSlack"
 
 class MilestonesViewController: UIViewController {
+    
+    let usernameLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Raleway-Regular", size: 34)
+        label.textColor = UIColor.mSalmon
+        label.textAlignment = NSTextAlignment.center
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.mBlue
+        view.backgroundColor = UIColor.mLightGray
+        view.addSubview(usernameLabel)
+        
+        usernameLabel.text = usernameFromSlack
 
+        installConstraints()
         // Do any additional setup after loading the view.
     }
 
@@ -23,15 +38,12 @@ class MilestonesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func installConstraints() {
+        usernameLabel.translatesAutoresizingMaskIntoConstraints = false
+        usernameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12).isActive = true
+        usernameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12).isActive = true
+        usernameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        usernameLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
-    */
 
 }
