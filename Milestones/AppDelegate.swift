@@ -52,20 +52,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let range = start..<end
         let code = urlString[range]
         
+        
         func getToken() {
             let request = NSMutableURLRequest(url: NSURL(string: "https://slack.com/api/oauth.access?client_id=\(CLIENT_ID)&client_secret=\(CLIENT_SECRET)&code=\(code)")! as URL)
             request.httpMethod = "GET"
             request.setValue("application/json", forHTTPHeaderField: "Accept")
             URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-                //                print(response)
+//                //                print(response)
                 guard let unwrappedData = data else { return }
                 do {
-                    if let rootObject = try JSONSerialization.jsonObject(with: unwrappedData, options: []) as? NSDictionary {
-                        DispatchQueue.main.async {
-                            usernameFromSlack = (rootObject["user"] as! NSDictionary)["name"]! as! String
-                            self.window?.rootViewController = MilestonesViewController()
-                            // print((rootObject["user"] as! NSDictionary)["name"]! as! String)
-                        }
+                    let decoder = JSONDecoder()
+                    let username = try decoder.decode(SlackUser.self, from: unwrappedData)
+                    DispatchQueue.main.async {
+                        usernameFromSlack = username.user.name
+                        self.window?.rootViewController = MilestonesViewController()
                     }
                 } catch {
                     DispatchQueue.main.async {
@@ -76,17 +76,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }).resume()
         }
 
-//        let codeLength = code.count
-//        if codeLength == 90 {
-//            self.window?.rootViewController = MilestonesViewController()
-//        } else {
-//            self.window?.rootViewController = LoginViewController()
-//        }
         getToken()
         self.window?.makeKeyAndVisible()
 
         return true
-
     }
 
 }

@@ -18,6 +18,7 @@
 		AEBAF348202AC9680032D7AC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF347202AC9680032D7AC /* UIColor.swift */; };
 		AEBAF34A202BF6080032D7AC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF349202BF6080032D7AC /* Keys.swift */; };
 		AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */; };
+		AEE88DEE2041D3C50016D201 /* SlackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE88DED2041D3C50016D201 /* SlackUser.swift */; };
 		C52230A7DF738D073AA4EDA8 /* Pods_Milestones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D7E9DD549029D2614FF6FA /* Pods_Milestones.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		AEBAF347202AC9680032D7AC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AEBAF349202BF6080032D7AC /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
+		AEE88DED2041D3C50016D201 /* SlackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				AEBAF347202AC9680032D7AC /* UIColor.swift */,
 				AEBAF349202BF6080032D7AC /* Keys.swift */,
 				AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */,
+				AEE88DED2041D3C50016D201 /* SlackUser.swift */,
 			);
 			path = Milestones;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9FC8912022CB5D008BA99B /* LoginViewController.swift in Sources */,
+				AEE88DEE2041D3C50016D201 /* SlackUser.swift in Sources */,
 				AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */,
 				AEBAF34A202BF6080032D7AC /* Keys.swift in Sources */,
 				AEBAF348202AC9680032D7AC /* UIColor.swift in Sources */,
