@@ -35,6 +35,7 @@ class MilestonesViewController: UIViewController {
         installConstraints()
         
         tableView.backgroundColor = UIColor.mLightGray
+        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(MilestoneTableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -68,9 +69,10 @@ extension MilestonesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MilestoneTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MilestoneTableViewCell
         
+        // check this
         cell.descriptionLabel.text = dummyMilestones[indexPath.row]["milestone"]
-        cell.categoryLabel.text = dummyMilestones[indexPath.row]["category"]
-        cell.targetDateLabel.text = dummyMilestones[indexPath.row]["targetDate"]
+        cell.categoryLabel.text = "Category: \(String(describing: dummyMilestones[indexPath.row]["category"]!))"
+        cell.targetDateLabel.text = "Due \(String(describing: dummyMilestones[indexPath.row]["targetDate"]!))"
     
         return cell
     }

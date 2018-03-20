@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct User: Decodable {
+struct User: Codable {
     let name: String
     let id: String
 }
 
-struct SlackUser: Decodable {
+struct SlackUser: Codable {
     let user: User
 }
