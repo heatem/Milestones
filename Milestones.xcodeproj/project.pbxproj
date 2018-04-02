@@ -19,9 +19,9 @@
 		AE91991B2022C33100642B29 /* MilestonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91991A2022C33100642B29 /* MilestonesUITests.swift */; };
 		AE9FC8912022CB5D008BA99B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9FC8902022CB5D008BA99B /* LoginViewController.swift */; };
 		AEBAF348202AC9680032D7AC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF347202AC9680032D7AC /* UIColor.swift */; };
-		AEBAF34A202BF6080032D7AC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF349202BF6080032D7AC /* Keys.swift */; };
 		AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */; };
 		AEE88DEE2041D3C50016D201 /* SlackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE88DED2041D3C50016D201 /* SlackUser.swift */; };
+		AEF697DE20720C1B00DA4038 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF697DD20720C1B00DA4038 /* Keys.swift */; };
 		C52230A7DF738D073AA4EDA8 /* Pods_Milestones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D7E9DD549029D2614FF6FA /* Pods_Milestones.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,9 +64,9 @@
 		AE91991C2022C33100642B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9FC8902022CB5D008BA99B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AEBAF347202AC9680032D7AC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		AEBAF349202BF6080032D7AC /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		AEE88DED2041D3C50016D201 /* SlackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUser.swift; sourceTree = "<group>"; };
+		AEF697DD20720C1B00DA4038 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 				AE9199032022C33100642B29 /* LaunchScreen.storyboard */,
 				AE9199062022C33100642B29 /* Info.plist */,
 				AEBAF347202AC9680032D7AC /* UIColor.swift */,
-				AEBAF349202BF6080032D7AC /* Keys.swift */,
+				AEF697DD20720C1B00DA4038 /* Keys.swift */,
 			);
 			path = Milestones;
 			sourceTree = "<group>";
@@ -410,8 +410,8 @@
 				AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */,
 				AE304EAE2045F61C009C6833 /* MilestoneTableViewCell.swift in Sources */,
 				AE304EB02045FEFC009C6833 /* MilestonesData.swift in Sources */,
-				AEBAF34A202BF6080032D7AC /* Keys.swift in Sources */,
 				AEBAF348202AC9680032D7AC /* UIColor.swift in Sources */,
+				AEF697DE20720C1B00DA4038 /* Keys.swift in Sources */,
 				AE9198FB2022C33100642B29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
