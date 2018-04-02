@@ -10,6 +10,7 @@
 		AE0103C2203F64B700AB26AF /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE0103C1203F64B700AB26AF /* Raleway-Regular.ttf */; };
 		AE304EAE2045F61C009C6833 /* MilestoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE304EAD2045F61C009C6833 /* MilestoneTableViewCell.swift */; };
 		AE304EB02045FEFC009C6833 /* MilestonesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE304EAF2045FEFC009C6833 /* MilestonesData.swift */; };
+		AE4FA2272068509300F40A25 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FA2262068509300F40A25 /* CreateViewController.swift */; };
 		AE9198FB2022C33100642B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9198FA2022C33100642B29 /* AppDelegate.swift */; };
 		AE9199002022C33100642B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9198FE2022C33100642B29 /* Main.storyboard */; };
 		AE9199022022C33100642B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9199012022C33100642B29 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		AE0103C1203F64B700AB26AF /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		AE304EAD2045F61C009C6833 /* MilestoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneTableViewCell.swift; sourceTree = "<group>"; };
 		AE304EAF2045FEFC009C6833 /* MilestonesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesData.swift; sourceTree = "<group>"; };
+		AE4FA2262068509300F40A25 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		AE9198F72022C33100642B29 /* Milestones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9198FA2022C33100642B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9198FF2022C33100642B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +120,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AE4FA22320684F9200F40A25 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */,
+				AE304EAD2045F61C009C6833 /* MilestoneTableViewCell.swift */,
+				AEE88DED2041D3C50016D201 /* SlackUser.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		AE4FA2252068507600F40A25 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				AE4FA2262068509300F40A25 /* CreateViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 		AE9198EE2022C33100642B29 = {
 			isa = PBXGroup;
 			children = (
@@ -144,18 +164,17 @@
 		AE9198F92022C33100642B29 /* Milestones */ = {
 			isa = PBXGroup;
 			children = (
+				AE4FA2252068507600F40A25 /* Create */,
+				AE4FA22320684F9200F40A25 /* List */,
 				AE9198FA2022C33100642B29 /* AppDelegate.swift */,
 				AE9FC8902022CB5D008BA99B /* LoginViewController.swift */,
+				AE304EAF2045FEFC009C6833 /* MilestonesData.swift */,
 				AE9198FE2022C33100642B29 /* Main.storyboard */,
 				AE9199012022C33100642B29 /* Assets.xcassets */,
 				AE9199032022C33100642B29 /* LaunchScreen.storyboard */,
 				AE9199062022C33100642B29 /* Info.plist */,
 				AEBAF347202AC9680032D7AC /* UIColor.swift */,
 				AEBAF349202BF6080032D7AC /* Keys.swift */,
-				AEBAF34E202D32C70032D7AC /* MilestonesViewController.swift */,
-				AEE88DED2041D3C50016D201 /* SlackUser.swift */,
-				AE304EAF2045FEFC009C6833 /* MilestonesData.swift */,
-				AE304EAD2045F61C009C6833 /* MilestoneTableViewCell.swift */,
 			);
 			path = Milestones;
 			sourceTree = "<group>";
@@ -387,6 +406,7 @@
 			files = (
 				AE9FC8912022CB5D008BA99B /* LoginViewController.swift in Sources */,
 				AEE88DEE2041D3C50016D201 /* SlackUser.swift in Sources */,
+				AE4FA2272068509300F40A25 /* CreateViewController.swift in Sources */,
 				AEBAF34F202D32C80032D7AC /* MilestonesViewController.swift in Sources */,
 				AE304EAE2045F61C009C6833 /* MilestoneTableViewCell.swift in Sources */,
 				AE304EB02045FEFC009C6833 /* MilestonesData.swift in Sources */,
